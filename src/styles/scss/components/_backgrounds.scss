@@ -1,0 +1,14 @@
+// Backgrounds
+
+.bg-header {
+    background: linear-gradient(to right, rgba(2, 11, 39, 0.8) 100%, transparent 90%), url("../../images/xen-city-background.jpeg");
+    background-size: cover;
+}
+
+.bg-gradient-primary {
+    background: rgb(52,95,233);
+    background: -moz-linear-gradient(90deg, rgba(52,95,233,1) 0%, rgba(54,189,239,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(52,95,233,1) 0%, rgba(54,189,239,1) 100%);
+    background: linear-gradient(90deg, rgba(52,95,233,1) 0%, rgba(54,189,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#345fe9",endColorstr="#36bdef",GradientType=1);
+}

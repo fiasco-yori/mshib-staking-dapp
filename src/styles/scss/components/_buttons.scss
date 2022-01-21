@@ -1,0 +1,43 @@
+// Buttons
+
+.btn-border {
+    border-width: 2px;
+}
+
+.btn-append {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    margin-right: -1rem;
+    margin-top: -0.75rem;
+    margin-bottom: -0.75rem;
+    margin-left: 1rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    @extend .bg-gradient-primary;
+    @extend .text-white;
+}
+
+.btn-outline-primary, .btn-outline-primary-alt {
+    @extend .btn-border;   
+}
+
+.btn-social-white {
+    @extend .text-white;
+    @extend .h2;
+    @extend .mb-0;
+}
+
+.btn-primary, .btn-gray {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+}
+
+.btn-gray.active {
+    @extend .btn-primary;
+}

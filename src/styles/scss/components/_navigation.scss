@@ -1,0 +1,20 @@
+.navbar-brand {
+    img {
+        max-width: 100px;
+    }
+}
+
+.nav-link.active {
+    position: relative;
+
+    &:after {
+        content: "";
+        width: calc(100% - 1rem);
+        bottom: 0.25rem;
+        height: 2px;
+        left: 0.5rem;
+        right: 0.5rem;
+        background-color: $primary;
+        position: absolute;
+    }
+}

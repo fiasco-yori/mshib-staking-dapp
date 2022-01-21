@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
+
+html, body {
+    font-size: 14px;
+}
+
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+.text-gradient-spring {
+    background-image: linear-gradient(60deg, #AFB84E, #f9f000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+// Helper classes
+
+.circle-primary {
+    @extend .bg-gradient-primary;
+    @extend .rounded-circle;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    font-weight: bold;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.square-primary {
+    @extend .bg-gradient-primary;
+    @extend .rounded;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    font-weight: bold;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.table-responsive {
+    th {
+        white-space: nowrap;
+    }
+}

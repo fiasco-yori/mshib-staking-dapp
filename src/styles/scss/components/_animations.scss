@@ -1,0 +1,39 @@
+// Animations
+
+.js_fade {
+    opacity: 0;
+    -webkit-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    transform: translateY(25px);
+    -webkit-transition-property: transform opacity;
+    -webkit-transition-duration: 0.6s;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-property: -webkit-transform opacity;
+    transition-property: -webkit-transform opacity;
+    -o-transition-property: transform opacity;
+    transition-property: transform opacity;
+    transition-property: transform opacity, -webkit-transform opacity;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+ 
+    &.js_fade_active {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-transition-property: transform opacity;
+        -webkit-transition-duration: 0.6s;
+        -webkit-transition-timing-function: ease;
+        -webkit-transition-property: -webkit-transform opacity;
+        transition-property: -webkit-transform opacity;
+        -o-transition-property: transform opacity;
+        transition-property: transform opacity;
+        transition-property: transform opacity, -webkit-transform opacity;
+        -o-transition-duration: 0.6s;
+        transition-duration: 0.6s;
+        -o-transition-timing-function: ease;
+        transition-timing-function: ease;
+    }
+}

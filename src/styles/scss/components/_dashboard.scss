@@ -1,0 +1,72 @@
+// Dashboard Styles
+
+.dashboard-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    height: -webkit-fill-available;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.dashboard-content {
+    @extend .flex-fill;
+    @extend .overflow-auto;
+    @extend .p-4;
+}
+
+.sidebar {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .flex-shrink-0;
+    @extend .p-4;
+    @extend .text-white;
+    @extend .bg-white;
+    @extend .shadow;
+    width: 280px;
+    overflow-y: auto;
+
+    @include media-breakpoint-down(lg) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        left: -100%;
+        transition: left 0.3s ease-in-out;
+
+        &.active {
+            left: 0;
+        }
+    }
+}
+
+.tile {
+    @extend .bg-white;
+    @extend .shadow;
+    @extend .p-4;
+    @extend .mb-4;
+    @extend .rounded;
+
+    h3 {
+        color: $primary-alt;
+    }
+}
+
+.title-tile {
+    @extend .bg-gradient-primary;
+    @extend .shadow;
+    @extend .p-4;
+    @extend .mb-4;
+    @extend .rounded;
+    @extend .d-flex;
+    @extend .justify-content-between;
+
+    
+    h1 {
+        color: white;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,322 @@
+/**** Main Styles ****/
+
+// Custom Variables
+@import "_variables";
+
+// Bootstrap Source Files
+@import "../../packages/bootstrap-5.1.0/scss/bootstrap";
+
+// Custom Styles
+@import "components/buttons";
+@import "components/layout";
+@import "components/navigation";
+@import "components/type";
+@import "components/helpers";
+@import "components/backgrounds";
+@import "components/animations";
+@import "components/dashboard";
+@import "components/progress";
+
+
+// Legacy
+
+// * {
+//     box-sizing: border-box;
+// }
+
+// html {
+//     font-size: 17px;
+// }
+
+// body {
+//     margin: 0;
+//     font-family: 'Muli', sans-serif;
+//     word-wrap: break-word;
+//     overflow-x: hidden;
+//     font-size: 1rem;
+//     scroll-behavior: smooth;
+// }
+
+// a {
+//     text-decoration: none;
+//     color: black;
+// }
+
+// img {
+//     max-width: 100%;
+// }
+
+// iframe {
+//     border: 0;
+// }
+
+// #swap {
+//     border-radius: .4rem;
+//     width: 100%;
+//     height: 600px;
+//     transform: scale(.9);
+// }
+
+// .flex {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .align-items-center {
+//     align-items: center;
+// }
+
+// .justify-content-center {
+//     justify-content: center;
+// }
+
+// .button {
+//     background: var(--white);
+//     padding: 0.7em .9rem;
+//     border-radius: 0.3rem;
+// }
+
+// .button.primary {
+//     background: linear-gradient(to bottom left, var(--primary-color), var(--secondary-color));
+//     color: var(--white);
+// }
+
+// .button.secondary {
+//     background: var(--gray);
+// }
+
+// nav {
+//     background: var(--white);
+//     width: 100vw;
+//     padding: 1rem;
+// }
+
+// .nav-container {
+//     justify-content: space-between;
+//     width: 100%;
+//     max-width: 1230px;
+// }
+
+// #links {
+//     width: calc(100% - 8rem);
+//     justify-content: flex-end;
+// }
+
+// #links li {
+//     margin: 0 1.5rem;
+//     list-style: none;
+// }
+
+// #logo {
+//     max-width: 8rem;
+// }
+
+// header {
+//     background: linear-gradient(to right, var(--overlay) 100%, transparent 90%), url(xen-city-background.jpg);
+//     background-size: cover;
+//     color: var(--white);
+//     width: 100vw;
+// }
+
+// .description {
+//     width: 100%;
+//     padding: 1rem;
+//     max-width: 1230px;
+// }
+
+// .button-group {
+//     margin-top: 2rem;
+//     width: 100%;
+// }
+
+// .button-group .button {
+//     margin: 0 1rem 1rem 0;
+// }
+
+// footer {
+//     width: 100vw;
+//     color: var(--white);
+//     background: var(--dark);
+// }
+
+// #stats {
+//     background: var(--dark);
+//     color: var(--white)
+// }
+
+// #features,
+// #socials {
+//     background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
+//     width: 100vw;
+//     padding: 1rem;
+//     color: var(--white);
+// }
+
+// #how-to-install h2,
+// #features h2 {
+//     text-align: center;
+//     padding: 2rem;
+//     width: 100%;
+// }
+
+// .feature-container {
+//     width: 100%;
+//     max-width: 1230px;
+// }
+
+// .feature-item {
+//     width: 30%;
+//     margin-right: 1%;
+//     text-align: center;
+
+// }
+
+// .feature-item i {
+//     display: block;
+//     font-size: 2em;
+
+// }
+
+// .steps {
+//     counter-reset: steps;
+// }
+
+// .step {
+//     padding: 3rem;
+//     align-content: center;
+//     width: 100vw;
+// }
+
+// .step h3:before {
+//     counter-increment: steps;
+//     content: counter(steps);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: linear-gradient(to bottom left, var(--primary-color), var(--secondary-color));
+//     color: var(--white);
+//     width: 2rem;
+//     position: absolute;
+//     margin-left: -3rem;
+//     margin-top: -.2rem;
+//     height: 2rem;
+//     border-radius: 100%;
+// }
+
+// .step h3 {
+//     width: 100%;
+//     padding-left: 3rem;
+// }
+
+// .step:nth-of-type(even) {
+//     background: var(--light);
+// }
+
+// .caption {
+//     max-width: calc(1230px / 2);
+//     width: 50%;
+// }
+
+// .button.with-icon {
+//     overflow: hidden;
+//     padding: 0 0 0 1rem;
+//     display: inline-block;
+// }
+
+// .button.with-icon span {
+//     display: inline-block;
+//     padding: .8rem 1rem;
+//     margin-left: 1rem;
+//     border-bottom-right-radius: .3rem;
+//     border-top-right-radius: .3rem;
+//     transform: translateX(.1rem);
+//     background: rgba(0, 0, 0, .1);
+// }
+
+
+// #socials a {
+//     font-size: 1.8rem;
+//     color: var(--white);
+//     text-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
+//     margin: 1rem 4rem 1rem 0;
+// }
+
+// footer {
+//     background: var(--dark);
+//     color: var(--white);
+// }
+
+// footer a {
+//     color: var(--white);
+// }
+
+// .footer-container {
+//     width: 100%;
+//     max-width: 1230px;
+//     padding: 2rem 0rem;
+// }
+
+// .footer-nav {
+//     width: 33%;
+// }
+
+// .footer-nav>* {
+//     display: block;
+//     padding: .5rem;
+// }
+
+// @media only screen and (max-width: 680px) {
+
+//     div,
+//     ul,
+//     #logo {
+//         width: 100% !important;
+//         padding: 1rem !important;
+//     }
+
+//     .nav-container,
+//     #links {
+//         padding: 0 !important;
+//         justify-content: center !important;
+//     }
+
+//     .button-group {
+//         padding: 0px !important;
+//     }
+
+//     iframe {
+//         transform: scale(1) !important;
+//     }
+
+//     #logo {
+//         text-align: center !important;
+//         width: 100vw !important;
+//     }
+
+//     nav li {
+//         margin: .8rem !important;
+//         ;
+//         text-align: center;
+//     }
+
+//     header {
+//         height: auto !important;
+
+//     }
+
+//     .with-icon {
+//         padding: .8rem !important;
+//     }
+
+//     .with-icon span {
+//         display: none !important;
+//     }
+
+//     #socials {
+//         text-align: center;
+//     }
+
+//     #socials a {
+//         margin: 1rem;
+//     }
+// }
