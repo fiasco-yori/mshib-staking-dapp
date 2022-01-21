@@ -15,7 +15,7 @@ import logo from '../../images/Binance-Coin-BNB-icon.png';
 
 import ConnectedWeb3Provider from "../../wallet/ConnectedWeb3Provider";
 import useContract from "../../hooks/useContractOperations";
-import {IRCIERC20, wbnbABI, stakingABI, mshibABI} from '../../contracts/contractABI'
+import {IRCIERC20, wbnbABI, stakingABI, mshibABI} from '../../contracts/contractABIs'
 import Web3 from "web3";
 
 function Dashboard(props) {
@@ -40,10 +40,11 @@ function Dashboard(props) {
   const mshibAddress = "0x86c3AcBF85A731F82A18BA99C144381c64998c20"
 
 
-  const mnxContract = new web3.eth.Contract(
-    basicABI,
-    mnxAddress
-  );
+  const mnxContract = '';
+//   const mnxContract = new web3.eth.Contract(
+//     basicABI,
+//     mnxAddress
+//   );
 
 
   const CoinGeckoAPIForBNB = 'https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd';
@@ -88,7 +89,8 @@ function Dashboard(props) {
 
     const isWeb3 = await isWeb3Available();
 
-    const rewardTAmountFrom = await mnxContract.methods.getTotalDividendsDistributed().call();
+    const rewardTAmountFrom = 0;
+    // const rewardTAmountFrom = await mnxContract.methods.getTotalDividendsDistributed().call();
     setTRewardAmount(parseFloat(web3.utils.fromWei(rewardTAmountFrom.toString(), "ether")).toFixed(3));
 
     if(!isWeb3) {
@@ -99,10 +101,12 @@ function Dashboard(props) {
 
     if(isWeb3 && account != null && account != undefined) {
 
-      const rewardAmountFrom = await mnxContract.methods.withdrawableDividendOf(account).call();
+      const rewardAmountFrom = 0;
+    //   const rewardAmountFrom = await mnxContract.methods.withdrawableDividendOf(account).call();
       setRewardAmount(parseFloat(web3.utils.fromWei(rewardAmountFrom.toString(), "ether")).toFixed(3));  
 
-      const mnxBalanceFrom = await mnxContract.methods.balanceOf(account).call();
+      const mnxBalanceFrom = 0;
+    //   const mnxBalanceFrom = await mnxContract.methods.balanceOf(account).call();
       setMnxBalance(parseFloat(web3.utils.fromWei(mnxBalanceFrom.toString(), "ether")).toFixed(3));  
     }
 
